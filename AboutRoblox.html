@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Wiki</title>
+    <link rel="icon" href="images/WebsiteLogo.png">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!---Logo and Navigation Links--->
+    <section class="header">
+        <nav id="navbar">
+            <a href="index.html"><img src="images/Logo.png" class="Logo"></a>
+            <div class="nav-links" id="navLinks"> 
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
+                     <ul id="menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#" onclick="return false">ABOUT</a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="AboutRoblox.html" onclick="return false">About Roblox</a></li>   
+                                    <li><a href="AboutMe.html">About Me</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" onclick="return false">GAMES</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="HowToPlay.html">How to play?</a></li>
+                                    <li><a href="Recommendations.html">Top-played Games</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="Contacts.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <!---About Roblox--->
+    <section class="All-About-Roblox">
+            <h1>What Is Roblox?</h1>
+            <p>Roblox is an online game platform and game creation system developed by Roblox Corporation. The games inside are not formally developed by Roblox Corporation, but by the users of the platform who developed or make them.<br>
+            </p>
+        
+            <h2>Who were the founders of Roblox, and when was it founded?</h2>
+            <p>David Baszucki and Erik Cassel founded the Roblox Corporation. Baszucki had previously founded Knowledge Revolution, an educational software company, in 1989. That year, through the company, he and Cassel developed Interactive Physics, a 2D physic's simulation. Knowledge Revolution followed this up with Working Model, which simulated a mechanical device. Baszucki was the company's vice president and general manager from 2000 until 2002, when he left MSC Software to establish Baszucki & Associates, an angel investment firm. He and Cassel founded Roblox Corporation in 2004. They began preliminary work on the video game called “DynaBlocks”. Later that year, a beta version of it was released. Baszucki started testing the first demos that year. Then it was later renamed to “Roblox” in 2005, due to the name being hard to remember. The game officially launched on September 1, 2006.
+            </p>
+                <div class="Video1">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zwyGPW7Zp4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+            <h3>Why is Roblox famous now?</h3>
+            <p>Because anyone, can make a lot of money on the platform. Some developers can earn as much as $1 million in a single year by monetizing their games. Developers have the ability to monetize their games by offering players in-game items like upgrades, gear, accessories, etc. that can be purchased with Roblox's virtual currency called “Robux.” Roblox's developers get to keep a portion of these transactions in the form of Robux. Once a developer makes enough money in Robux, they can use a program called the Developer Exchange or DevEx to convert Robux to real money.
+            </p>
+        
+            <h4>Is Roblox fun to play?</h4>
+            <p>Yes! Roblox is a free-to-play game platform, you can download it for FREE! And it is available across multiple platforms. Roblox offers multiple ways to get online and play, even if you don’t have a PC. It is available to play on tablets, smartphones, and even the XBOX! You can even play with your friends in the same server, even if they're on a different platform.
+            </p>
+        
+            <h5>What’s so entertaining about Roblox?
+            </h5>
+            <p style="padding-bottom: 120px">The charm of Roblox is that there is an endless stream of variety; a variety of game modes, game types, game genres, and that there’s a game for everyone to play. If you get bored with one game mode, you can always hop into another game for an altogether different experience.
+            </p>
+        </section>
+
+        <!--Footer-->
+    <section class="Footer">
+        <h7>About This Website</h7><br>
+        <pAccount>I created this site to let you know what is Roblox, how it became famous, and why Roblox is popular.<br> And to recommend to you a few of my favorite games and popular games on Roblox.</pAccount>
+            <div class="Contact-Link">
+                <a href="https://www.facebook.com/razel.santos.313" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                <a href="https://www.instagram.com/raizer_kun/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/_Raizer_san" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/in/razel-santos-974683254/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        <pCredits>Made with <i class="fa fa-heart"></i> by Razel M. Santos</pCredits>
+        </section>
+    
+<!------JavaScript for Toggle------>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function openMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+<!------JavaScript for Scroll------>
+<script>
+    var navbar = document.getElementById("navbar");
+    var menu = document.getElementById("menu");
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+    }
+
+</script>
+
+</body>
+</html>

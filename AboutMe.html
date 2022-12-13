@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Wiki</title>
+    <link rel="icon" href="images/WebsiteLogo.png">
+    <link rel="stylesheet" href="style4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!---Logo and Navigation Links--->
+    <section class="header">
+        <nav id="navbar">
+            <a href="index.html"><img src="images/Logo.png" class="Logo"></a>
+            <div class="nav-links" id="navLinks"> 
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
+                     <ul id="menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#" onclick="return false">ABOUT</a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="AboutRoblox.html">About Roblox</a></li>   
+                                    <li><a href="AboutMe.html" onclick="return false">About Me</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" onclick="return false">GAMES</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="HowToPlay.html">How to play?</a></li>
+                                    <li><a href="Recommendations.html">Top-played Games</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="Contacts.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="openMenu()"></i>
+            </nav>
+    
+    <!--About Me-->
+    <section class="aboutme">
+        <div class="container">
+            <div class="image"><img class="img1" src="images/AboutMePic.jpg"  width="460" height="460"></div>
+        <div class="text">
+        <h1>So, Who am I?</h1>
+            <p>Hello! My name is Razel M. Santos, 16 yrs. old. I live currently at Imus, Cavite and I'm a student from Arellano University.</p><br>    
+            <p>My dream is to become a successful computer programmer, so I can help my parents to solve our financial problems in life</p>
+        </div>
+    </div>
+        </section>
+
+            <!--Footer-->
+    <section class="Footer">
+        <h7>About This Website</h7><br>
+        <pAccount>I created this site to let you know what is Roblox, how it became famous, and why Roblox is popular.<br> And to recommend to you a few of my favorite games and popular games on Roblox.</pAccount>
+            <div class="Contact-Link">
+                <a href="https://www.facebook.com/razel.santos.313" target="_blank"><i class="fa fa-facebook-official"></i></a>
+                <a href="https://www.instagram.com/raizer_kun/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/_Raizer_san" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                <a href="https://www.linkedin.com/in/razel-santos-974683254/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        <pCredits>Made with <i class="fa fa-heart"></i> by Razel M. Santos</pCredits>
+        </section>
+
+        <!------JavaScript for Toggle------>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function openMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+        <!------JavaScript for Scroll------>
+<script>
+    var navbar = document.getElementById("navbar");
+    var menu = document.getElementById("menu");
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+    }
+
+</script>
+
+</body>
+</html>

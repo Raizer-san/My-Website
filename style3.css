@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Reem Kufi Ink', sans-serif;
+}
+body{
+    background-color: #dfe4ea;
+}
+nav{
+    background-color: darkred;
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo{
+    width: 180px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul{
+    width: 100%;
+    margin-top: 10px;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+    padding: 4px 20px;
+}
+nav.sticky{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 6%;
+    background: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100000;
+    transition: ease-in;
+}
+nav.sticky .nav-links{
+    text-align: right;
+    padding: 0px 185px;
+}
+nav.sticky ul{
+    margin: auto;
+    padding: 4px 3px;
+}
+nav.sticky ul li{
+    list-style: none;
+    display: inline-block;
+    margin: auto;
+    padding: 4px 20px;
+
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.8s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.sub-menu-1{
+    display: none;
+}
+.nav-links ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: darkred;
+    margin-top: 7px;
+    margin-left: 15px;
+    padding: 8px;
+}
+.nav-links ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    text-align: left;
+    width: 180px;
+}
+.nav-links ul li:hover .sub-menu-1 ul li{
+    padding: 10px;
+}
+.sub-menu-2{
+    display: none;
+}
+.nav-links ul li:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+    background: darkred;
+    margin-top: 7px;
+    margin-left: 15px;
+    padding: 8px;
+}
+.nav-links ul li:hover .sub-menu-2 ul{
+    display: block;
+    margin: 10px;
+    text-align: left;
+    width: 180px;
+}
+.nav-links ul li:hover .sub-menu-2 ul li{
+    padding: 10px;
+}
+/*How to Play*/
+.How-To-Play{
+    width: 70%;
+    margin: auto; 
+    text-align: center;
+    padding-top: 100px;
+}
+h6{
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+p1{
+    color: rgb(137, 137, 137);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    padding-top: 8px;
+    padding-bottom: 100px;
+    word-spacing: 5px;
+}
+.how-to{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+}
+p2{
+    color: rgb(137, 137, 137);
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    padding-top: 10px;
+    word-spacing: 5px;
+}
+.Video2{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 800px;
+    height: 400px;
+    margin: auto;
+}
+/* ---Footer--- */
+.Footer{
+    width: 100%; 
+    text-align: center;
+    padding: 27px 0px;
+    background-color: rgb(31, 29, 29);
+
+}
+h7{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: #fff;
+}
+pAccount{
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 30px;
+    padding: 8px;
+    word-spacing: 5px;
+}
+pCredits{
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    color: #fff;
+    border-bottom: solid white;
+    border-radius: 8px;
+
+}
+.Contact-Link{
+    font-size: 18px;
+    padding: 5px 100px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 16px;
+    cursor: pointer;
+}
+.Contact-Link .fa{
+    color: white;
+    padding: 13px 13px;
+}
+.fa-heart{
+    color: red;
+}
+nav .fa{
+    display: none;
+}

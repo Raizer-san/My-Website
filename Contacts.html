@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Wiki</title>
+    <link rel="icon" href="images/WebsiteLogo.png">
+    <link rel="stylesheet" href="style6.css">
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!---Logo and Navigation Links--->
+    <section class="header">
+        <nav id="navbar">
+            <a href="index.html"><img src="images/Logo.png" class="Logo"></a>
+            <div class="nav-links" id="navLinks"> 
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
+                     <ul id="menu">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#" onclick="return false">ABOUT</a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="AboutRoblox.html">About Roblox</a></li>   
+                                    <li><a href="AboutMe.html">About Me</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" onclick="return false">GAMES</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="HowToPlay.html">How to play?</a></li>
+                                    <li><a href="Recommendations.html">Top-played Games</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="Contacts.html" onclick="return false">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+        <h1>Get In Touch</h1>
+        <section class="contact">
+        <div class="info">
+            <i class="fa fa-envelope"></i>
+        <p>razelsantos0629@gmail.com</p>
+        </div>
+
+        <div class="info">
+        <i class="fa fa-phone"></i>
+        <p>+639637236846</p>
+        </div>
+
+        <div class="info">
+        <i class="fa fa-commenting"></i>
+        <div class="icons">
+        <p><a href="https://www.facebook.com/razel.santos.313" target="_blank"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://www.instagram.com/raizer_kun/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/_Raizer_san" target="_blank"><i class="fa fa-twitter-square"></i></a>
+            <a href="https://www.linkedin.com/in/razel-santos-974683254/" target="_blank"><i class="fa fa-linkedin-square"></i></a></p>
+        </div>
+        </div>
+        </section>
+
+        <!------JavaScript for Toggle------>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function openMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+        <!------JavaScript for Scroll------>
+<script>
+    var navbar = document.getElementById("navbar");
+    var menu = document.getElementById("menu");
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+    }
+
+</script>
+
+</body>
+</html>

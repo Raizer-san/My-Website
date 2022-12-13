@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Wiki</title>
+    <link rel="icon" href="images/WebsiteLogo.png">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <!--Logo and Navigation Links-->
+<section class="header">
+        <nav id="navbar">
+            <a href="index.html" onclick="return false"><img src="images/Logo.png" class="Logo"></a>
+            <div class="nav-links" id="navLinks"> 
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
+                     <ul id="menu">
+                        <li><a href="index.html" onclick="return false">HOME</a></li>
+                        <li><a href="#" onclick="return false">ABOUT</a>
+                            <div class="sub-menu-2">
+                                <ul>
+                                    <li><a href="AboutRoblox.html">About Roblox</a></li>   
+                                    <li><a href="AboutMe.html">About Me</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" onclick="return false">GAMES</a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li><a href="HowToPlay.html">How to play?</a></li>
+                                    <li><a href="Recommendations.html">Top-played Games</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="Contacts.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="openMenu()"></i>
+            </nav>
+<div class="background"></div>
+    <!--Header-->        
+<div class="text-box">
+    <h1>What You Need to Know<br>About Roblox</h1>
+    <p>Why is it famous?</p>
+    <a href="AboutRoblox.html"class="about">FIND OUT HERE</a>
+</div>
+</section>
+
+
+<!------JavaScript for Toggle------>
+
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function openMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+<!------JavaScript for Scroll------>
+
+<script>
+    var navbar = document.getElementById("navbar");
+    var menu = document.getElementById("menu");
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+            navbar.classList.add("sticky");
+        }
+        else{
+            navbar.classList.remove("sticky");
+        }
+    }
+
+</script>
+
+</body>
+</html>
